@@ -10,11 +10,11 @@ if(! $conn )
   die('Could not connect: ' . mysql_error());
 }
 echo 'Connected successfully<br />';
-$sql = CREATE TABLE results (
-   `Project1` varchar(20),
-   `Project2` varchar(20),
-   `Project3` varchar(20),
-   `Project4` varchar(20)
+$sql = CREATE TABLE RESULTS (
+   Project1 varchar(20),
+   Project2 varchar(20),
+   Project3 varchar(20),
+   Project4 varchar(20)
 );
 mysql_select_db( 'results' );
 $retval = mysql_query( $sql, $conn );
