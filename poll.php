@@ -1,0 +1,17 @@
+<?php
+require 'Services/Twilio.php';
+$response = new Services_Twilio_Twiml();
+$gather = $response->gather(array(
+	'action' => 'http://hackathonpoll.sip.twilio.com/process_poll.php',
+	'method' => 'GET',
+	'numDigits' => '1'
+));
+$gather->say("This is Mark's Pizza Party Poll");
+$gather->say("If You Would Like Cheese Pizza Press 1");
+$gather->say("If You Would Like Pepperoni Pizza Press 2");
+$gather->say("If You Would Like Sausage Pizza Press 3");
+$gather->say("If You Would Like Pineapple Pizza and Canadian Bacon Press 4");
+
+header('Content-Type: text/xml');
+print $response;
+?>
