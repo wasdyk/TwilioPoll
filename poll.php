@@ -7,10 +7,10 @@ $gather = $response->gather(array(
 	'numDigits' => '1'
 ));
 $gather->say("What project should win first prize at Hack RU?");
-$gather->say("If You Would Like Cheese Pizza Press 1");
-$gather->say("If You Would Like Pepperoni Pizza Press 2");
-$gather->say("If You Would Like Sausage Pizza Press 3");
-$gather->say("If You Would Like Pineapple Pizza and Canadian Bacon Press 4");
+$gather->say("Press 1 for project 1");
+$gather->say("Press 2 for project 2");
+$gather->say("Press 3 for project 3");
+$gather->say("Press 4 for project 4");
 
 header('Content-Type: text/xml');
 print $response;
