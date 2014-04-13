@@ -18,7 +18,7 @@ foreach ($numbers as $number) {
 		$call = $client->account->calls->create(
 			'973-775-9990',									// Caller ID
 			$number,												// Your friend's number
-			'http://hackathonpoll.sip.twilio.com/poll.php'	 // Location of your TwiML
+			'http://162.243.98.130/poll.php'	 // Location of your TwiML
 		);
 		echo "Started call: $call->sid\n";
 	} catch (Exception $e) {
