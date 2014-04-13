@@ -10,6 +10,7 @@
 		<div align="center">
 			<h1>Twilio Poll</h1>
 
-			<form method="POST" action="makecall.php"><input type="submit" value="Start Poll">
+			<form method="POST" action="makecall.php"><input type="text" name="phonenumber"><input type="submit" value="Start Poll">
+
 
 </html>
