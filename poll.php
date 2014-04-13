@@ -6,7 +6,7 @@ $gather = $response->gather(array(
 	'method' => 'GET',
 	'numDigits' => '1'
 ));
-$gather->say("This is Mark's Pizza Party Poll");
+$gather->say("What project should win first prize at Hack RU?");
 $gather->say("If You Would Like Cheese Pizza Press 1");
 $gather->say("If You Would Like Pepperoni Pizza Press 2");
 $gather->say("If You Would Like Sausage Pizza Press 3");
