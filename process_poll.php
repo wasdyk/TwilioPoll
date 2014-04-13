@@ -1,7 +1,7 @@
 <?php
 	require 'Services/Twilio.php';
 	// Connect to MySQL, and connect to the Database
-	$dbhost = '162.246.98.130';
+	$dbhost = '127.0.0.1';
 	$dbuser = 'root';
 	$dbpass = 'password';
 	mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());
