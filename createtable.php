@@ -10,7 +10,7 @@ if(! $conn )
   die('Could not connect: ' . mysql_error());
 }
 echo 'Connected successfully<br />';
-$sql = CREATE TABLE `results` (
+$sql = CREATE TABLE results (
    `Project1` varchar(20),
    `Project2` varchar(20),
    `Project3` varchar(20),
