@@ -8,10 +8,10 @@
 	// Check if values have been entered
 	$digit = isset($_REQUEST['Digits']) ? $_REQUEST['Digits'] : null;
 	$choices = array(
-		'1' => 'Cheese',
-		'2' => 'Pepperoni',
-		'3' => 'Sausage',
-		'4' => 'Pineapple_Bacon',
+		'1' => 'Project1',
+		'2' => 'Project2',
+		'3' => 'Project3',
+		'4' => 'Project4',
 	);
 	if (isset($choices[$digit])) {
 		mysql_query("INSERT INTO `results` (`" . $choices[$digit] . "`) VALUES ('1')");
