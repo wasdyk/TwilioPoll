@@ -24,8 +24,7 @@
 	}
 	// @end snippet
 	// @start snippet
-    require 'Services/Twilio.php';
-	$response = new Services_Twilio_Twiml();
+    $response = new Services_Twilio_Twiml();
 	$response->say($say);
 	$response->hangup();
 	//header('Content-Type: text/xml');
