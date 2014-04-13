@@ -7,7 +7,7 @@ $token = 'dd940f389f0fa6f709fcc9430fcfb237';
 
 // @start snippet
 // List of phone numbers
-$numbers = array('862-209-0221', '973-356-2635');
+$numbers = array('862-209-0221');
 // @end snippet
 // @start snippet
 // Instantiate a client to Twilio's REST API
