@@ -115,3 +115,4 @@ if (isset($_GET['make'])
     $package->debugPackageFile();
 }
 
+?>

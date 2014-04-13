@@ -27,7 +27,3 @@ foreach ($numbers as $number) {
 }
 // @end snippet
 ?>
-
-<html>
-	<h3>Making calls...</h3>
-</html>
