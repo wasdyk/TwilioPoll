@@ -14,7 +14,7 @@
 		'4' => 'Project4',
 	);
 	if (isset($choices[$digit])) {
-		mysql_query("INSERT INTO `results` (`" . $choices[$digit] . "`) VALUES ('1')");
+		mysql_query("INSERT INTO results (`" . $choices[$digit] . "`) VALUES ('1')");
 		$say = 'Thank you. Your choice has been tallied.';
 	} else {
 		$say = "Sorry, I don't have that topping.";
