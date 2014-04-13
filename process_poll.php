@@ -1,7 +1,7 @@
 <?php
 	require 'Services/Twilio.php';
 	// Connect to MySQL, and connect to the Database
-	mysql_connect('http://162.243.98.130/', 'root', 'password') or die(mysql_error());
+	mysql_connect('162.243.98.130', 'root', 'password') or die(mysql_error());
 	mysql_select_db('poll') or die(mysql_error());
 
 	// @start snippet

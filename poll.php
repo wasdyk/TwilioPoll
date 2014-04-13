@@ -12,6 +12,6 @@ $gather->say("Press 2 for project 2");
 $gather->say("Press 3 for project 3");
 $gather->say("Press 4 for project 4");
 
-header('Content-Type: text/xml');
+//header('Content-Type: text/xml');
 print $response;
 ?>
