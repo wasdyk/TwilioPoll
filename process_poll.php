@@ -1,7 +1,10 @@
 <?php
 	require 'Services/Twilio.php';
 	// Connect to MySQL, and connect to the Database
-	mysql_connect('162.243.98.130', 'root', 'password') or die(mysql_error());
+	$dbhost = '162.246.98.130';
+	$dbuser = 'root';
+	$dbpass = 'password';
+	mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());
 	mysql_select_db('poll') or die(mysql_error());
 
 	// @start snippet
@@ -25,7 +28,7 @@
 	$response = new Services_Twilio_Twiml();
 	$response->say($say);
 	$response->hangup();
-	header('Content-Type: text/xml');
+	//header('Content-Type: text/xml');
 	print $response;
 	// @end snippet
 
