@@ -20,7 +20,7 @@
 		mysql_query("INSERT INTO results (`" . $choices[$digit] . "`) VALUES ('1')");
 		$say = 'Thank you. Your choice has been tallied.';
 	} else {
-		$say = "Sorry, I don't have that topping.";
+		$say = "Sorry, the option you've chosen isn't valid.";
 	}
 	// @end snippet
 	// @start snippet
